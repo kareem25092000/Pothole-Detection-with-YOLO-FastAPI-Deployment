@@ -3,8 +3,9 @@ import os
 from PIL import Image
 
 
+# change the path to your model
 
-path_model_nano = os.path.join("runs" ,"detect" ,"train" 
+path_model_nano = os.path.join("runs" ,"detect" ,"train-5" 
                           ,"weights" ,"best.pt")
 
 model_nano = YOLO(path_model_nano)
@@ -15,6 +16,7 @@ def predict_nano(image):
     return result
 
 
+# change the path to your model
 path_model_small = os.path.join("runs" ,"detect" ,"train-2" 
                           ,"weights" ,"best.pt")
 
